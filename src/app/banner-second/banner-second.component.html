@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Banner</title>
+</head>
+<body>
+<div class="container-fluid banner-second d-flex align-items-center"
+     [ngClass]="{
+  'bg-banner-one': indicator==='A',
+  'bg-banner-two': indicator==='B',
+  'bg-banner-three': indicator==='C'
+}"
+>
+  <div class="container">
+    <h1 class="fw-bold display-2 caraque-font">
+      <span *ngIf="indicator==='A'">Beschäftigungsart</span>
+      <span *ngIf="indicator==='B'">Themenwelt</span>
+      <span *ngIf="indicator==='C'">Förderschwerpunkte</span>
+    </h1>
+    <p class="quicksand-font color-green fw-bold">
+      <span *ngIf="indicator === 'A'">Gestaltung  |  Fingerspiel  |  Aktion</span>
+      <span *ngIf="indicator === 'B'">Jahreszeiten  |  Nachhaltigkeit  |  Tiere</span>
+      <span *ngIf="indicator === 'C'">Motorik  |  Kreativität  |  Sozialkompetenz</span>
+    </p>
+  </div>
+</div>
+</body>
+</html>

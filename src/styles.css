@@ -1,0 +1,227 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+/**
+Fonts
+ */
+@font-face {
+  font-family: 'Caraque_Trial_RgMelted';
+  src: url('./assets/Caraque_Trial_RgMelted.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.caraque-font {
+  font-family: 'Caraque_Trial_RgMelted', sans-serif;
+  letter-spacing: 0.1em; /* change this value as per your requirement */
+}
+
+.quicksand-font {
+  font-family: 'Quicksand', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+body {
+  background-color: #F3F3F3;
+}
+
+.border-right-0 {
+  border-right: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/**
+Background Colors
+ */
+.bg-gray {
+  background-color: #E3E3E3;
+}
+
+.bg-green {
+  background-color: #01723C;
+}
+
+.bg-green-2 {
+  background-color: #055C33;
+}
+
+.bg-light-green {
+  background: rgba(1, 114, 60, 0.15);
+}
+
+
+/*
+Colors
+*/
+
+.color-white {
+  color: #ffffff !important;
+}
+
+.color-green {
+  color: #01723C !important;
+}
+
+.color-golden {
+  color: #FFC700;
+}
+
+.color-grey {
+  color: #DBDBDB;
+}
+
+/**
+Header
+ */
+
+.down-arrow {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/**
+Banner
+ */
+
+.banner {
+  height: 682px;
+}
+
+/**
+Banner Second
+ */
+
+.banner-second {
+  height: 15rem;
+}
+
+.bg-banner-one {
+  background-color: #F6E8B6;
+}
+
+.bg-banner-two {
+  background-color: #F9DD7A;
+}
+
+.bg-banner-three {
+  background-color: #FFC700;
+}
+
+/**
+Carousel 3
+ */
+.container-carousel3 {
+  min-height: 26vh;
+}
+
+.container-carousel3 .card-container {
+  background-color: #FFC700;
+  width: 18rem;
+}
+
+.container-carousel3 .card-container img {
+  transform: scale(0.5);
+}
+
+.container-carousel3 .card-container {
+  border-color: #F3F3F3;
+}
+
+.container-carousel3 .card-container .card-body {
+  background-color: white !important;
+}
+
+.container-carousel3 .card-container .btn {
+  position: absolute;
+  top: 46%;
+  z-index: 1;
+  background-color: #F9DD7A;
+}
+
+
+
+/**
+News Letter
+ */
+.container-newsletter {
+  min-height: 26vh;
+}
+
+.container2-newsletter {
+  min-height: 35vh;
+}
+
+.newsletter-bg {
+  background: url("assets/newsletter-bg.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+/**
+Social
+ */
+.container-social {
+  min-height: 42vh;
+}
+
+.container-social-second {
+  min-height: 19vh;
+}
+
+.social-list {
+  list-style: none;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+.social-list li {
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.social-list li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 20%;
+  height: 1px;
+  border-bottom: 1px solid #FFC700;
+  transform: translateX(-50%);
+}
+
+.social-list li:last-child::before {
+  display: none;
+}
+
+.social-icons {
+  width: 59px;
+  height: 59px;
+}
+
+/**
+Footer
+ */
+.footer {
+  height: 10rem;
+}
+
+.footer-links {
+  text-decoration: underline; /* optional: add an underline to the links */
+
+}
