@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Social</title>
+</head>
+<body>
+<div class="container-fluid container-carousel2 bg-transparent  d-flex align-items-center">
+  <div class="container">
+
+    <div class="row">
+      <div class="col">
+        <p-carousel [value]="items" [numVisible]="1"  [circular]="true" >
+          <ng-template let-item pTemplate="item">
+
+                <img [src]="item.img" [alt]="item.title" class="main-carousel-contain">
+
+          </ng-template>
+        </p-carousel>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

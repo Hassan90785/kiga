@@ -10,6 +10,9 @@ import { SocialComponent } from './social/social.component';
 import { FooterComponent } from './footer/footer.component';
 import { Carousel3Component } from './carousel3/carousel3.component';
 import {CarouselModule} from "primeng/carousel";
+import { Carousel2Component } from './carousel2/carousel2.component';
+import { Carousel1Component } from './carousel1/carousel1.component';
+import { MainCarouselComponent } from './main-carousel/main-carousel.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import {CarouselModule} from "primeng/carousel";
     NewsLetterComponent,
     SocialComponent,
     FooterComponent,
-    Carousel3Component
+    Carousel3Component,
+    Carousel2Component,
+    Carousel1Component,
+    MainCarouselComponent
   ],
   imports: [
     BrowserModule,
