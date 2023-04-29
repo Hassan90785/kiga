@@ -1,6 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 
 
 /**
@@ -22,10 +27,6 @@ Fonts
   font-family: 'Quicksand', sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  overflow: auto;
-}
 
 body {
   background-color: #F3F3F3;
@@ -130,6 +131,12 @@ Carousel 3
 
 .container-carousel3 .card-container img {
   transform: scale(0.5);
+  width: 100%;
+  object-fit: contain;
+}
+.container-carousel3 .card-container .img-container {
+  width: 100%;
+  height: 250px;
 }
 
 .container-carousel3 .card-container {
@@ -142,12 +149,16 @@ Carousel 3
 
 .container-carousel3 .card-container .btn {
   position: absolute;
-  top: 46%;
+  top: 52%;
   z-index: 1;
   background-color: #F9DD7A;
 }
-
-
+/**
+Carousel Styling
+ */
+#pr_id_1 .p-carousel-item {
+  flex: 1 0 26.333333% !important;
+}
 
 /**
 News Letter

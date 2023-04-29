@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container-fluid container-carousel3 bg-white  d-flex align-items-center">
-  <div class="container   ">
+  <div class="container">
     <div class="row">
       <div class="col-md-6">
         <h2 class="fw-bold caraque-font">Entdecke unsere Vielfalt!</h2>
@@ -20,41 +20,21 @@
     </div>
     <div class="row mt-4">
       <div class="col">
-        <div class="card rounded-4 my-3 card-container shadow position-relative float-start">
-          <img src="assets/carousel/img1.png" class="card-img-top" alt="...">
-          <div class="card-body ">
-            <button type="button" class="btn btn-warning rounded-pill mb-3  fw-bold px-3 ">Sticker</button>
-            <h4 class="card-text overflow-hidden my-5">Mitmachlieder von Max Mustermann</h4>
-          </div>
-        </div>
-
-    <div class="card rounded-4 my-3 card-container shadow position-relative ms-3  float-start">
-          <img src="assets/carousel/img1.png" class="card-img-top" alt="...">
-          <div class="card-body ">
-            <button type="button" class="btn btn-warning rounded-pill mb-3  fw-bold px-3 ">Sticker</button>
-            <h4 class="card-text overflow-hidden my-5">Mitmachlieder von Max Mustermann</h4>
-          </div>
-        </div>
-
-    <div class="card rounded-4 my-3 card-container shadow position-relative ms-3  float-start">
-          <img src="assets/carousel/img1.png" class="card-img-top" alt="...">
-          <div class="card-body ">
-            <button type="button" class="btn btn-warning rounded-pill mb-3  fw-bold px-3 ">Sticker</button>
-            <h4 class="card-text overflow-hidden my-5">Mitmachlieder von Max Mustermann</h4>
-          </div>
-        </div>
-
-    <div class="card rounded-4 my-3 card-container shadow position-relative ms-3  float-start">
-          <img src="assets/carousel/img1.png" class="card-img-top" alt="...">
-          <div class="card-body ">
-            <button type="button" class="btn btn-warning rounded-pill mb-3  fw-bold px-3 ">Sticker</button>
-            <h4 class="card-text overflow-hidden my-5">Mitmachlieder von Max Mustermann</h4>
-          </div>
-        </div>
-
+        <p-carousel [value]="items" [numVisible]="3" [responsiveOptions]="responsiveOptions" [showIndicators]="false" [circular]="true">
+          <ng-template let-item pTemplate="item">
+            <div class="card rounded-4 my-3 card-container shadow position-relative ms-3 float-start">
+              <div class="img-container d-flex justify-content-center">
+                <img [src]="item.img" [alt]="item.title" class="card-img-top">
+              </div>
+              <div class="card-body">
+                <button type="button" class="btn btn-warning rounded-pill mb-3 fw-bold px-3">{{item.title}}</button>
+                <h3 class="card-text overflow-hidden my-5">{{item.label}}</h3>
+              </div>
+            </div>
+          </ng-template>
+        </p-carousel>
       </div>
     </div>
-
   </div>
 </div>
 </body>

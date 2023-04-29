@@ -9,6 +9,7 @@ import { NewsLetterComponent } from './news-letter/news-letter.component';
 import { SocialComponent } from './social/social.component';
 import { FooterComponent } from './footer/footer.component';
 import { Carousel3Component } from './carousel3/carousel3.component';
+import {CarouselModule} from "primeng/carousel";
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { Carousel3Component } from './carousel3/carousel3.component';
   ],
   imports: [
     BrowserModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
