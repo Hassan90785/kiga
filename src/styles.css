@@ -103,7 +103,8 @@ Banner
  */
 
 .banner {
-  height: 43vh;
+  min-height: 43vh;
+  max-height: 43vh;
 }
 
 /**
@@ -111,7 +112,8 @@ Banner Second
  */
 
 .banner-second {
-  height: 15rem;
+  min-height: 371px;
+  max-height: 371px;
 }
 
 .bg-banner-one {
@@ -135,7 +137,7 @@ Main Carousel
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 20%;
   background-image: linear-gradient(to bottom, rgb(207 224 216), rgb(207 224 216));
 }
 
@@ -146,6 +148,7 @@ Carousel 2
 
 .container-carousel2 {
   min-height: 83vh;
+  max-height: 83vh;
 }
 
 .container-carousel2 .card-container {
@@ -186,6 +189,7 @@ Carousel 3
  */
 .container-carousel3 {
   min-height: 83vh;
+  max-height: 83vh;
 }
 
 .container-carousel3 .card-container {
@@ -270,10 +274,12 @@ News Letter
  */
 .container-newsletter {
   min-height: 26vh;
+  max-height: 26vh;
 }
 
 .container2-newsletter {
   min-height: 35vh;
+  max-height: 35vh;
 }
 
 .newsletter-bg {
@@ -288,10 +294,12 @@ Social
  */
 .container-social {
   min-height: 42vh;
+  max-height: 42vh;
 }
 
 .container-social-second {
   min-height: 19vh;
+  max-height: 19vh;
 }
 
 .social-list {
@@ -334,10 +342,19 @@ Social
 Footer
  */
 .footer {
-  height: 10rem;
+  min-height: 10rem;
+  max-height: 10rem;
 }
 
 .footer-links {
   text-decoration: underline; /* optional: add an underline to the links */
 
+}
+@media only screen and (max-width: 480px) {
+  .container-social {
+    max-height: 65vh;
+  }
+  .banner {
+    max-height: 63vh;
+  }
 }
