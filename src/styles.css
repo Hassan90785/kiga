@@ -39,6 +39,16 @@ body {
   cursor: pointer;
 }
 
+.rounded-bottom-v2 {
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+}
+
+.rounded-top-v2 {
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
 /**
 Background Colors
  */
@@ -93,7 +103,7 @@ Banner
  */
 
 .banner {
-  height: 682px;
+  height: 43vh;
 }
 
 /**
@@ -114,6 +124,19 @@ Banner Second
 
 .bg-banner-three {
   background-color: #FFC700;
+}
+
+/**
+Main Carousel
+ */
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(to bottom, rgb(207 224 216), rgb(207 224 216));
 }
 
 /**
@@ -216,8 +239,7 @@ img.main-carousel-contain {
   position: absolute;
   bottom: -8%;
   left: 13%;
-  width: 6rem !important;
-  height: 1rem !important;
+
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
@@ -225,14 +247,13 @@ img.main-carousel-contain {
 }
 
 .carousel-indicators [data-bs-target] {
-  width: 2rem  !important;
-  height:2rem !important;
-  background-color:rgba(166, 164, 164, 0.5);
+  width: 1rem !important;
+  height: 1rem !important;
+  background-color: rgba(166, 164, 164, 0.5);
 }
 
 .carousel-indicators li {
-  width: 2rem  !important;
-  height:2rem !important;
+
   border-radius: 50%;
   background-color: rgba(166, 164, 164, 0.5);
   margin: 0 5px;

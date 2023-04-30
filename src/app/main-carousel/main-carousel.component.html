@@ -8,25 +8,19 @@
   <title>Social</title>
 </head>
 <body>
-<div class="container-fluid container-carousel2 bg-transparent  d-flex align-items-center">
-  <div class="container">
-
+<div class="container-fluid container-carousel2 bg-transparent position-relative  d-flex align-items-center">
+  <div class="bg"></div>
+  <div class="container ">
     <div class="row">
       <div class="col">
-<!--        <p-carousel [value]="items" [numVisible]="5"  [circular]="true" [showIndicators]="true" >
-          <ng-template let-item pTemplate="item">
-
-                <img [src]="item.img" [alt]="item.title" class="main-carousel-contain">
-
-          </ng-template>
-        </p-carousel>-->
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-indicators">
-            <li *ngFor="let item of items; let i = index" data-bs-target="#carouselExample" [attr.data-bs-slide-to]="i" [ngClass]="{'active': i === 0}"></li>
+            <li *ngFor="let item of items; let i = index" data-bs-target="#carouselExample" [attr.data-bs-slide-to]="i"
+                [ngClass]="{'active': i === 0}"></li>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item " *ngFor="let item of items; let i = index" [ngClass]="{'active': i === 0}">
-              <img [src]="item.img"  class="d-block w-100" alt="..."/>
+              <img [src]="item.img" class="d-block w-100" alt="..."/>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -38,8 +32,6 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-
-
 
 
       </div>

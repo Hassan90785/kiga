@@ -22,13 +22,13 @@
       <div class="col">
         <p-carousel [value]="items" [numVisible]="3" [responsiveOptions]="responsiveOptions" [showIndicators]="false" [circular]="true">
           <ng-template let-item pTemplate="item">
-            <div class="card rounded-4 my-3 card-container shadow position-relative ms-3 float-start">
-              <div class="img-container d-flex justify-content-center">
+            <div class="card bg-transparent rounded-top-v2 my-3 card-container shadow position-relative ms-3 float-start">
+              <div class="img-container d-flex justify-content-center ">
                 <img [src]="item.img" [alt]="item.title" class="card-img-top carousel2-img">
               </div>
-              <div class="card-body text-white" [ngStyle]="{'background-color': item.bg }">
+              <div class="card-body rounded-bottom-v2 text-white" [ngStyle]="{'background-color': item.bg }">
                 <button type="button" class="btn btn-warning rounded-pill mb-3 fw-bold px-3">{{item.title}}</button>
-                <h3 class="card-text overflow-hidden my-5">{{item.label}}</h3>
+                <h3 class="card-text my-5">{{item.label}}</h3>
               </div>
             </div>
           </ng-template>
