@@ -36,19 +36,19 @@ export class MainCarouselComponent implements OnInit {
     this.items = [
       {
         id: 0,
-        img: 'assets/carousel/top_carousel.png',
+        img: 'assets/carousel/main-banner.png',
         title: 'Sticker',
         label: 'Mitmachlieder von Max Mustermann'
       },
       {
         id: 1,
-        img: 'assets/carousel/top_carousel.png',
+        img: 'assets/carousel/main-banner.png',
         title: 'Sticker',
         label: 'Mitmachlieder von Max Mustermann'
       },
       {
         id: 1,
-        img: 'assets/carousel/top_carousel.png',
+        img: 'assets/carousel/main-banner.png',
         title: 'Sticker',
         label: 'Mitmachlieder von Max Mustermann'
       }

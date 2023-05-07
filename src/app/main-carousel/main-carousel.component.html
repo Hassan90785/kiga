@@ -9,9 +9,9 @@
 </head>
 <body>
 <div
-  class="container-fluid container-carousel2 bg-transparent position-relative  d-flex align-items-center
-d-md-block d-none">
-  <div class="bg"></div>
+  class="container-fluid container-carousel2 bg-transparent position-relative
+">
+  <div class="bg d-lg-flex d-none"></div>
   <div class="container ">
     <div class="row">
       <div class="col">
@@ -22,7 +22,102 @@ d-md-block d-none">
           </div>
           <div class="carousel-inner">
             <div class="carousel-item " *ngFor="let item of items; let i = index" [ngClass]="{'active': i === 0}">
-              <img [src]="item.img" class="d-block w-100" alt="..."/>
+              <div class="row d-lg-none d-flex">
+                <div class="col">
+                  <div class="card rounded-4 shadow main-carousel">
+                    <div class="card-body">
+                      <h1 class="card-title display-2  color-green caraque-font fw-bold">Deine Tagesaufgabe
+                        auf Kiga+</h1>
+                      <p class="card-text fw-bold">Entdecke abenteuerliche Lernwelten! <br/> Hier lernen Kinder.</p>
+
+                      <button class="btn btn-light bg-green color-white rounded-4 mt-4  px-4 shadow">Zum Wochenplan
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row d-lg-flex d-none">
+                <div class="col-md-6">
+
+                  <div class="card rounded-4 shadow main-carousel">
+                    <div class="row no-gutters">
+                      <div class="col-md-5">
+                        <img [src]="item.img" class="card-img d-flex w-100" [alt]="item.img">
+                      </div>
+                      <div class="col-md-7">
+                        <div class="card-body">
+                          <h1 class="card-title color-green caraque-font fw-bold">Deine Tagesaufgabe
+                            auf Kiga+</h1>
+                          <p class="card-text">Eine Lernplattform für Lorem ipsum dolor.</p>
+
+                          <button class="btn btn-light mt-4  px-4 shadow">Zum Wochenplan</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row ">
+                    <div class="col-4">
+                      <div class="card small-cards  rounded-4 shadow  d-flex align-items-center justify-content-center">
+                        <img src="assets/carousel/arrow-down.png" class="card-img-top mt-4" alt="...">
+                        <div class="card-body text-center">
+                          <p class="card-text m-0">Meine Downloads</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card small-cards rounded-4 shadow  d-flex align-items-center justify-content-center">
+                        <img src="assets/carousel/heart.png" class="card-img-top  mt-4" alt="...">
+                        <div class="card-body text-center">
+                          <p class="card-text m-0">Meine
+                            Favoriten</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card small-cards  rounded-4 shadow  d-flex align-items-center justify-content-center">
+                        <img src="assets/carousel/user.png" class="card-img-top  mt-4" alt="...">
+                        <div class="card-body text-center">
+                          <p class="card-text m-0">Mein
+                            Konto</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-4 ">
+                    <div class="col-4">
+                      <div class="card small-cards  rounded-4 shadow  d-flex align-items-center justify-content-center" >
+                        <img src="assets/carousel/walletmoney.png" class="card-img-top  mt-4" alt="...">
+                        <div class="card-body text-center">
+                          <p class="card-text m-0">Abo &
+                            Zahlung</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card small-cards  rounded-4 shadow  d-flex align-items-center justify-content-center">
+                        <img src="assets/carousel/heart.png" class="card-img-top  mt-4" alt="...">
+                        <div class="card-body text-center">
+                          <p class="card-text m-0">Team
+                            Bereich</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card small-cards  rounded-4 shadow  d-flex align-items-center justify-content-center">
+                        <img src="assets/carousel/people.png" class="card-img-top  mt-4" alt="...">
+                        <div class="card-body text-center">
+                          <p class="card-text m-0">Passwort
+                            ändern</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -34,8 +129,47 @@ d-md-block d-none">
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+      </div>
+    </div>
 
 
+    <div class="row mt-4 d-flex d-lg-none">
+      <div class="col-2 px-0 text-center">
+        <div class="card small-cards  rounded-4 shadow d-flex align-items-center justify-content-center">
+          <img src="assets/carousel/arrow-down.png" class="card-img-top align-self-center" alt="...">
+        </div>
+        <figcaption class="figure-caption text-center"> Downloads</figcaption>
+      </div>
+      <div class="col-2  px-0">
+        <div class="card small-cards rounded-4 shadow d-flex align-items-center justify-content-center">
+          <img src="assets/carousel/heart.png" class="card-img-top align-self-center" alt="...">
+        </div>
+        <figcaption class="figure-caption text-center"> Favoriten</figcaption>
+      </div>
+      <div class="col-2  px-0">
+        <div class="card small-cards  rounded-4 shadow d-flex align-items-center justify-content-center">
+          <img src="assets/carousel/user.png" class="card-img-top align-self-center" alt="...">
+        </div>
+        <figcaption class="figure-caption text-center">Konto</figcaption>
+      </div>
+      <div class="col-2  px-0">
+        <div class="card small-cards  rounded-4 shadow d-flex align-items-center justify-content-center">
+          <img src="assets/carousel/walletmoney.png" class="card-img-top align-self-center" alt="...">
+        </div>
+        <figcaption class="figure-caption text-center d-flex align-items-center justify-content-center">Abo</figcaption>
+      </div>
+      <div class="col-2  px-0">
+        <div class="card small-cards  rounded-4 shadow d-flex align-items-center justify-content-center">
+          <img src="assets/carousel/heart.png" class="card-img-top align-self-center" alt="...">
+        </div>
+
+        <figcaption class="figure-caption text-center ">Team </figcaption>
+      </div>
+      <div class="col-2  px-0">
+        <div class="card small-cards  rounded-4 shadow d-flex align-items-center justify-content-center">
+          <img src="assets/carousel/people.png" class="card-img-top align-self-center" alt="...">
+        </div>
+        <figcaption class="figure-caption text-center">Passwort   </figcaption>
       </div>
     </div>
   </div>

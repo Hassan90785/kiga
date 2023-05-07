@@ -155,9 +155,6 @@ Carousel 2
   width: 18rem;
 }
 
-.main-carousel-contain {
-  object-fit: cover;
-}
 
 .container-carousel2 .card-container img {
   width: 100%;
@@ -233,15 +230,10 @@ Carousel Styling
   flex: 1 0 26.333333% !important;
 }
 
-img.main-carousel-contain {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .carousel-indicators {
   position: absolute;
-  bottom: -8%;
+  bottom: -17%;
   left: 13%;
 
   transform: translateX(-50%);
@@ -350,11 +342,93 @@ Footer
   text-decoration: underline; /* optional: add an underline to the links */
 
 }
+
+.small-cards img {
+  width: 60px;
+}
+
+.small-cards {
+  width: 183px;
+  height: 175px;
+}
+
+
 @media only screen and (max-width: 480px) {
   .container-social {
     max-height: 65vh;
   }
+  .container-carousel2 {
+    min-height: 63vh;
+  }
   .banner {
     max-height: 63vh;
   }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .small-cards img {
+    width: 30px;
+  }
+
+  .small-cards {
+    width: 75px;
+    height: 75px;
+    transform: scale(0.7);
+  }
+
+  .figure-caption {
+    font-size: 0.675em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .small-cards img {
+    width: 40px;
+  }
+
+  .small-cards {
+    width: 100px;
+    height: 100px;
+  }
+
+  .figure-caption {
+    font-size: 0.875em;
+  }
+
+  .main-carousel {
+    min-height: 27rem;
+  }
+
+  .carousel-indicators {
+    bottom: -11%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)  and (max-width: 1024px) {
+  .small-cards {
+    width: 130px;
+    height: 130px;
+  }
+
+  .small-cards img {
+    width: 30px;
+  }
+
+  .card-text {
+    font-size: 13px;
+    line-height: 1;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1450px) {
+
 }
